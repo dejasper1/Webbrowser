@@ -46,5 +46,22 @@ namespace UI
         {
 
         }
+
+        private void TabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MenuStrip1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) {
+                webBrowser1.Navigate(addressBox.Text.ToString());
+
+
+            }
+        }
+
+       
+
     }
 }
