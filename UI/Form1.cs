@@ -16,5 +16,15 @@ namespace UI
         {
             InitializeComponent();
         }
+
+        private void ExitWebBrowserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This is a fully functioning web browser application built in Software Construction Fundamentals, 2019.");
+        }
     }
 }
