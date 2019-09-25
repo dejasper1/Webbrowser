@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29215.179
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.98
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{D16EEA02-9DB3-4ED8-93A7-BD99A0A18908}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBrowser.UI", "UI\WebBrowser.UI.csproj", "{D16EEA02-9DB3-4ED8-93A7-BD99A0A18908}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{BB70BA58-5D44-4C59-8B55-3974CB106D06}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBrowser.Data", "WebBrowser.Data\WebBrowser.Data.csproj", "{05327B1E-A630-4F92-8C4B-18164F4A053F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{2E553E5D-C5A0-4BB0-B906-850D2439E4B0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBrowser.Logic", "WebBrowser.Logic\WebBrowser.Logic.csproj", "{95912D21-8C20-48B7-AC8F-FEB9D0248608}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{D16EEA02-9DB3-4ED8-93A7-BD99A0A18908}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D16EEA02-9DB3-4ED8-93A7-BD99A0A18908}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D16EEA02-9DB3-4ED8-93A7-BD99A0A18908}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BB70BA58-5D44-4C59-8B55-3974CB106D06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BB70BA58-5D44-4C59-8B55-3974CB106D06}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BB70BA58-5D44-4C59-8B55-3974CB106D06}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BB70BA58-5D44-4C59-8B55-3974CB106D06}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2E553E5D-C5A0-4BB0-B906-850D2439E4B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2E553E5D-C5A0-4BB0-B906-850D2439E4B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2E553E5D-C5A0-4BB0-B906-850D2439E4B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2E553E5D-C5A0-4BB0-B906-850D2439E4B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05327B1E-A630-4F92-8C4B-18164F4A053F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05327B1E-A630-4F92-8C4B-18164F4A053F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05327B1E-A630-4F92-8C4B-18164F4A053F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05327B1E-A630-4F92-8C4B-18164F4A053F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95912D21-8C20-48B7-AC8F-FEB9D0248608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95912D21-8C20-48B7-AC8F-FEB9D0248608}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95912D21-8C20-48B7-AC8F-FEB9D0248608}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95912D21-8C20-48B7-AC8F-FEB9D0248608}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
