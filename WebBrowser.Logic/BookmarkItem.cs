@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace WebBrowser.Logic
 {
-    public class Class1
+    public class BookmarkItem
     {
+        public string URL { get; set; }
+        public string Title { get; set; }
+        public int Id { get; set; }
     }
 }
