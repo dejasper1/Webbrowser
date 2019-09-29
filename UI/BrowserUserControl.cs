@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using WebBrowser.Logic;
 
 namespace UI
 {
@@ -80,6 +81,27 @@ namespace UI
         private void webBrowser_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
 
+        }
+
+        private void toolStripBookmarkButton_Click(object sender, EventArgs e)
+        {
+
+            var item = new BookmarkItem();
+            item.URL = webBrowser.Document.Url.ToString();
+            item.Title = webBrowser.Document.Title;
+            BookmarkManager.AddItem(item);
+            
+        }
+
+        private void webBrowser_DocumentCompleted_1(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+            string title = webBrowser.Document.Title;
+            var item = new HistoryItem();
+            item.Title = title;
+            item.URL = webBrowser.Document.Url.ToString();
+            item.Date = DateTime.Now;
+
+            HistoryManager.AddItem(item);
         }
     }
 }

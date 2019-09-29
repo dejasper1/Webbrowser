@@ -33,11 +33,13 @@
             // 
             // bookmarkListBox1
             // 
+            this.bookmarkListBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bookmarkListBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bookmarkListBox1.FormattingEnabled = true;
-            this.bookmarkListBox1.ItemHeight = 25;
-            this.bookmarkListBox1.Location = new System.Drawing.Point(172, 100);
+            this.bookmarkListBox1.ItemHeight = 31;
+            this.bookmarkListBox1.Location = new System.Drawing.Point(0, 0);
             this.bookmarkListBox1.Name = "bookmarkListBox1";
-            this.bookmarkListBox1.Size = new System.Drawing.Size(520, 279);
+            this.bookmarkListBox1.Size = new System.Drawing.Size(1014, 565);
             this.bookmarkListBox1.TabIndex = 0;
             // 
             // BookmarkManagerForm

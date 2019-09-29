@@ -71,5 +71,18 @@ namespace UI
         {
 
         }
+
+        private void manageBookmarksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BookmarkManagerForm form = new BookmarkManagerForm();
+            form.ShowDialog();
+
+        }
+
+        private void manageHistoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HistoryManagerForm form = new HistoryManagerForm();
+            form.ShowDialog();
+        }
     }
 }

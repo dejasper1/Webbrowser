@@ -33,11 +33,12 @@
             // 
             // listBox1
             // 
+            this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 25;
-            this.listBox1.Location = new System.Drawing.Point(186, 124);
+            this.listBox1.Location = new System.Drawing.Point(0, 0);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(670, 329);
+            this.listBox1.Size = new System.Drawing.Size(1076, 549);
             this.listBox1.TabIndex = 0;
             // 
             // HistoryManagerForm

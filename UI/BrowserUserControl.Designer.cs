@@ -48,7 +48,7 @@
             this.toolStripBackButton.Image = ((System.Drawing.Image)(resources.GetObject("toolStripBackButton.Image")));
             this.toolStripBackButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripBackButton.Name = "toolStripBackButton";
-            this.toolStripBackButton.Size = new System.Drawing.Size(46, 44);
+            this.toolStripBackButton.Size = new System.Drawing.Size(36, 47);
             this.toolStripBackButton.Text = "Back";
             this.toolStripBackButton.Click += new System.EventHandler(this.ToolStripBackButton_Click);
             // 
@@ -58,7 +58,7 @@
             this.toolStripForwardButton.Image = ((System.Drawing.Image)(resources.GetObject("toolStripForwardButton.Image")));
             this.toolStripForwardButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripForwardButton.Name = "toolStripForwardButton";
-            this.toolStripForwardButton.Size = new System.Drawing.Size(46, 44);
+            this.toolStripForwardButton.Size = new System.Drawing.Size(36, 47);
             this.toolStripForwardButton.Text = "Forward";
             this.toolStripForwardButton.ToolTipText = "Forward";
             this.toolStripForwardButton.Click += new System.EventHandler(this.ToolStripForwardButton_Click);
@@ -69,7 +69,7 @@
             this.toolStripReloadButton.Image = ((System.Drawing.Image)(resources.GetObject("toolStripReloadButton.Image")));
             this.toolStripReloadButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripReloadButton.Name = "toolStripReloadButton";
-            this.toolStripReloadButton.Size = new System.Drawing.Size(46, 44);
+            this.toolStripReloadButton.Size = new System.Drawing.Size(36, 47);
             this.toolStripReloadButton.Text = "Refresh";
             this.toolStripReloadButton.Click += new System.EventHandler(this.ToolStripReloadButton_Click);
             // 
@@ -79,14 +79,13 @@
             this.toolStripHomeButton.Image = ((System.Drawing.Image)(resources.GetObject("toolStripHomeButton.Image")));
             this.toolStripHomeButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripHomeButton.Name = "toolStripHomeButton";
-            this.toolStripHomeButton.Size = new System.Drawing.Size(46, 44);
+            this.toolStripHomeButton.Size = new System.Drawing.Size(36, 47);
             this.toolStripHomeButton.Text = "Home";
             this.toolStripHomeButton.Click += new System.EventHandler(this.ToolStripHomeButton_Click);
             // 
             // addressBox
             // 
             this.addressBox.AutoSize = false;
-            this.addressBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.addressBox.MergeAction = System.Windows.Forms.MergeAction.MatchOnly;
             this.addressBox.Name = "addressBox";
             this.addressBox.Size = new System.Drawing.Size(800, 50);
@@ -100,7 +99,7 @@
             this.toolStripSearchButton.Image = ((System.Drawing.Image)(resources.GetObject("toolStripSearchButton.Image")));
             this.toolStripSearchButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSearchButton.Name = "toolStripSearchButton";
-            this.toolStripSearchButton.Size = new System.Drawing.Size(46, 44);
+            this.toolStripSearchButton.Size = new System.Drawing.Size(36, 47);
             this.toolStripSearchButton.Text = "Go";
             this.toolStripSearchButton.Click += new System.EventHandler(this.ToolStripButtonSearch_Click);
             // 
@@ -110,8 +109,9 @@
             this.toolStripBookmarkButton.Image = ((System.Drawing.Image)(resources.GetObject("toolStripBookmarkButton.Image")));
             this.toolStripBookmarkButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripBookmarkButton.Name = "toolStripBookmarkButton";
-            this.toolStripBookmarkButton.Size = new System.Drawing.Size(46, 44);
+            this.toolStripBookmarkButton.Size = new System.Drawing.Size(36, 47);
             this.toolStripBookmarkButton.Text = "Bookmark";
+            this.toolStripBookmarkButton.Click += new System.EventHandler(this.toolStripBookmarkButton_Click);
             // 
             // toolStrip1
             // 
@@ -147,6 +147,8 @@
             this.webBrowser.Name = "webBrowser";
             this.webBrowser.Size = new System.Drawing.Size(1540, 1000);
             this.webBrowser.TabIndex = 4;
+            this.webBrowser.Url = new System.Uri("https://www.google.com", System.UriKind.Absolute);
+            this.webBrowser.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser_DocumentCompleted_1);
             // 
             // BrowserUserControl
             // 
