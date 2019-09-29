@@ -103,5 +103,27 @@ namespace UI
 
             HistoryManager.AddItem(item);
         }
+
+        private void webBrowser_ProgressChanged(object sender, WebBrowserProgressChangedEventArgs e)
+        {
+
+
+            progressBar.Maximum = (int)e.MaximumProgress;
+            if (e.CurrentProgress >= 0 && e.CurrentProgress <= e.MaximumProgress)
+            {
+                progressBar.Value = (int)e.CurrentProgress;
+
+            }
+        }
+
+        private void webBrowser_Navigating(object sender, WebBrowserNavigatingEventArgs e)
+        {
+            toolStripStatusLabel1.Text = "Loading";
+        }
+
+        private void webBrowser_Navigated(object sender, WebBrowserNavigatedEventArgs e)
+        {
+            toolStripStatusLabel1.Text = "Done";
+        }
     }
 }

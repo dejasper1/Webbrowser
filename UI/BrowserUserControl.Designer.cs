@@ -39,7 +39,11 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.webBrowser = new System.Windows.Forms.WebBrowser();
+            this.statusStrip2 = new System.Windows.Forms.StatusStrip();
+            this.progressBar = new System.Windows.Forms.ToolStripProgressBar();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStrip1.SuspendLayout();
+            this.statusStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStripBackButton
@@ -141,19 +145,46 @@
             // 
             // webBrowser
             // 
-            this.webBrowser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webBrowser.Dock = System.Windows.Forms.DockStyle.Top;
             this.webBrowser.Location = new System.Drawing.Point(0, 50);
-            this.webBrowser.MinimumSize = new System.Drawing.Size(1500, 1000);
+            this.webBrowser.MinimumSize = new System.Drawing.Size(1600, 1500);
             this.webBrowser.Name = "webBrowser";
-            this.webBrowser.Size = new System.Drawing.Size(1540, 1000);
+            this.webBrowser.Size = new System.Drawing.Size(1600, 1500);
             this.webBrowser.TabIndex = 4;
             this.webBrowser.Url = new System.Uri("https://www.google.com", System.UriKind.Absolute);
             this.webBrowser.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser_DocumentCompleted_1);
+            this.webBrowser.Navigated += new System.Windows.Forms.WebBrowserNavigatedEventHandler(this.webBrowser_Navigated);
+            this.webBrowser.Navigating += new System.Windows.Forms.WebBrowserNavigatingEventHandler(this.webBrowser_Navigating);
+            this.webBrowser.ProgressChanged += new System.Windows.Forms.WebBrowserProgressChangedEventHandler(this.webBrowser_ProgressChanged);
+            // 
+            // statusStrip2
+            // 
+            this.statusStrip2.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.statusStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.progressBar,
+            this.toolStripStatusLabel1});
+            this.statusStrip2.Location = new System.Drawing.Point(0, 584);
+            this.statusStrip2.Name = "statusStrip2";
+            this.statusStrip2.Size = new System.Drawing.Size(1540, 38);
+            this.statusStrip2.TabIndex = 6;
+            this.statusStrip2.Text = "statusStrip2";
+            // 
+            // progressBar
+            // 
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(150, 32);
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(238, 33);
+            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
             // 
             // BrowserUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.statusStrip2);
             this.Controls.Add(this.webBrowser);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.toolStrip1);
@@ -161,6 +192,8 @@
             this.Size = new System.Drawing.Size(1540, 622);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.statusStrip2.ResumeLayout(false);
+            this.statusStrip2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,5 +210,8 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.WebBrowser webBrowser;
+        private System.Windows.Forms.StatusStrip statusStrip2;
+        private System.Windows.Forms.ToolStripProgressBar progressBar;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }

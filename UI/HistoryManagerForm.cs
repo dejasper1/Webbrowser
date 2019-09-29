@@ -27,5 +27,36 @@ namespace UI
                 listBox1.Items.Add(string.Format("[{0}] {1} ({2})", item.Date, item.Title, item.URL));
             }
         }
+
+        private void buttonSearch_Click(object sender, EventArgs e)
+        {
+            String searchQuery = textBoxSearch.Text;
+            listBox1.Items.Clear();
+            var items = HistoryManager.GetItems();
+            foreach (var item in items)
+            {
+                if (item.URL.ToString().ToLower().Contains(textBoxSearch.Text.ToLower()))
+                {
+                    listBox1.Items.Add(string.Format("[{0}] {1} ({2})", item.Date, item.Title, item.URL));
+
+                }
+            }
+
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            string itemRemove = listBox1.GetItemText(listBox1.SelectedItem);
+            HistoryManager.RemoveHistoryManager(itemRemove);
+            listBox1.Items.RemoveAt(listBox1.SelectedIndex);
+        }
+
+        private void buttonClear_Click(object sender, EventArgs e)
+        {
+            HistoryManager.RemoveAllHistory();
+            listBox1.Items.Clear();
+            listBox1.EndUpdate();
+            listBox1.Refresh();
+        }
     }
 }

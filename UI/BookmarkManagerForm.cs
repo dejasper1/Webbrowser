@@ -30,5 +30,27 @@ namespace UI
             }
 
         }
+
+        private void buttonSearch_Click(object sender, EventArgs e)
+        {
+            string searchQuery = textBoxSearchBookmark.Text;
+            bookmarkListBox1.Items.Clear();
+            var items = BookmarkManager.GetItems();
+            foreach (var item in items)
+            {
+                if (item.URL.ToString().ToLower().Contains(searchQuery.ToLower()))
+                {
+                    bookmarkListBox1.Items.Add(string.Format("{0} ({1})", item.Title, item.URL));
+
+                }
+            }
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            string item = bookmarkListBox1.GetItemText(bookmarkListBox1.SelectedItem);
+            BookmarkManager.RemoveBookmarkManager(item);
+            bookmarkListBox1.Items.RemoveAt(bookmarkListBox1.SelectedIndex);
+        }
     }
 }

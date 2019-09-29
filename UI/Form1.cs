@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace UI
 {
     public partial class Form1 : Form
@@ -83,6 +85,14 @@ namespace UI
         {
             HistoryManagerForm form = new HistoryManagerForm();
             form.ShowDialog();
+        }
+
+        private void clearHistoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            WebBrowser.Logic.HistoryManager.RemoveAllHistory();
+           
+            
+
         }
     }
 }

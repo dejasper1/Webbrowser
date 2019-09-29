@@ -37,5 +37,33 @@ namespace WebBrowser.Logic
             return results;
         }
 
+        public static void RemoveHistoryManager(string item)
+        {
+            var adapter = new HistoryTableAdapter();
+            var rows = adapter.GetData();
+
+            foreach (var row in rows)
+            {
+                string dbentry = string.Format("[{0}] {1} ({2})", row.Date, row.Title, row.URL);
+                if (dbentry == item)
+                {
+                    adapter.Delete(row.Id, row.Date);
+                }
+            }
+
+
+        }
+
+        public static void RemoveAllHistory()
+        {
+            var adapter = new HistoryTableAdapter();
+            var rows = adapter.GetData();
+            foreach (var row in rows)
+            {
+                adapter.Delete(row.Id, row.Date);
+            }
+        }
+
+
     }
 }

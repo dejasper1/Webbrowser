@@ -47,5 +47,22 @@ namespace WebBrowser.Logic
             adapter.Delete(item.Id);
         }
 
+        public static void RemoveBookmarkManager(string item)
+        {
+            var adapter = new BookmarksTableAdapter();
+            var rows = adapter.GetData();
+
+            foreach (var row in rows)
+            {
+                string bookMarkEntry = string.Format("{0} ({1})", row.Title, row.URL);
+                if (bookMarkEntry == item)
+                {
+                    adapter.Delete(row.Id);
+                }
+            }
+
+
+        }
+
     }
 }
