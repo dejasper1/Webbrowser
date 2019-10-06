@@ -130,7 +130,7 @@
             this.toolStripBookmarkButton});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1540, 50);
+            this.toolStrip1.Size = new System.Drawing.Size(2700, 50);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -140,7 +140,7 @@
             this.webBrowser1.Location = new System.Drawing.Point(0, 50);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(1540, 572);
+            this.webBrowser1.Size = new System.Drawing.Size(2700, 1540);
             this.webBrowser1.TabIndex = 3;
             // 
             // webBrowser
@@ -149,7 +149,7 @@
             this.webBrowser.Location = new System.Drawing.Point(0, 50);
             this.webBrowser.MinimumSize = new System.Drawing.Size(1600, 1500);
             this.webBrowser.Name = "webBrowser";
-            this.webBrowser.Size = new System.Drawing.Size(1600, 1500);
+            this.webBrowser.Size = new System.Drawing.Size(2700, 1500);
             this.webBrowser.TabIndex = 4;
             this.webBrowser.Url = new System.Uri("https://www.google.com", System.UriKind.Absolute);
             this.webBrowser.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser_DocumentCompleted_1);
@@ -163,9 +163,9 @@
             this.statusStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.progressBar,
             this.toolStripStatusLabel1});
-            this.statusStrip2.Location = new System.Drawing.Point(0, 584);
+            this.statusStrip2.Location = new System.Drawing.Point(0, 1552);
             this.statusStrip2.Name = "statusStrip2";
-            this.statusStrip2.Size = new System.Drawing.Size(1540, 38);
+            this.statusStrip2.Size = new System.Drawing.Size(2700, 38);
             this.statusStrip2.TabIndex = 6;
             this.statusStrip2.Text = "statusStrip2";
             // 
@@ -184,12 +184,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.Controls.Add(this.statusStrip2);
             this.Controls.Add(this.webBrowser);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.toolStrip1);
             this.Name = "BrowserUserControl";
-            this.Size = new System.Drawing.Size(1540, 622);
+            this.Size = new System.Drawing.Size(2700, 1590);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.statusStrip2.ResumeLayout(false);

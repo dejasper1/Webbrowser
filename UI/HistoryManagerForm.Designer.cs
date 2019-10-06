@@ -33,6 +33,8 @@
             this.textBoxSearch = new System.Windows.Forms.TextBox();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonClear = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // listBox1
@@ -42,12 +44,12 @@
             this.listBox1.ItemHeight = 25;
             this.listBox1.Location = new System.Drawing.Point(0, 0);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(1076, 549);
+            this.listBox1.Size = new System.Drawing.Size(1086, 699);
             this.listBox1.TabIndex = 0;
             // 
             // buttonSearch
             // 
-            this.buttonSearch.Location = new System.Drawing.Point(59, 346);
+            this.buttonSearch.Location = new System.Drawing.Point(50, 40);
             this.buttonSearch.Margin = new System.Windows.Forms.Padding(6);
             this.buttonSearch.Name = "buttonSearch";
             this.buttonSearch.Size = new System.Drawing.Size(150, 44);
@@ -58,7 +60,7 @@
             // 
             // textBoxSearch
             // 
-            this.textBoxSearch.Location = new System.Drawing.Point(59, 283);
+            this.textBoxSearch.Location = new System.Drawing.Point(50, 0);
             this.textBoxSearch.Margin = new System.Windows.Forms.Padding(10, 10, 6, 6);
             this.textBoxSearch.Name = "textBoxSearch";
             this.textBoxSearch.Size = new System.Drawing.Size(600, 31);
@@ -66,7 +68,7 @@
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(261, 346);
+            this.buttonDelete.Location = new System.Drawing.Point(258, 40);
             this.buttonDelete.Margin = new System.Windows.Forms.Padding(6);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(150, 44);
@@ -77,7 +79,7 @@
             // 
             // buttonClear
             // 
-            this.buttonClear.Location = new System.Drawing.Point(509, 346);
+            this.buttonClear.Location = new System.Drawing.Point(500, 40);
             this.buttonClear.Margin = new System.Windows.Forms.Padding(6);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(150, 44);
@@ -86,19 +88,32 @@
             this.buttonClear.UseVisualStyleBackColor = true;
             this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
+            // panel1
+            // 
+            this.panel1.AutoSize = true;
+            this.panel1.BackColor = System.Drawing.SystemColors.Menu;
+            this.panel1.Controls.Add(this.textBoxSearch);
+            this.panel1.Controls.Add(this.buttonClear);
+            this.panel1.Controls.Add(this.buttonSearch);
+            this.panel1.Controls.Add(this.buttonDelete);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 609);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1086, 90);
+            this.panel1.TabIndex = 7;
+            // 
             // HistoryManagerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1076, 549);
-            this.Controls.Add(this.buttonClear);
-            this.Controls.Add(this.buttonDelete);
-            this.Controls.Add(this.textBoxSearch);
-            this.Controls.Add(this.buttonSearch);
+            this.ClientSize = new System.Drawing.Size(1086, 699);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.listBox1);
             this.Name = "HistoryManagerForm";
             this.Text = "HistoryManagerForm";
             this.Load += new System.EventHandler(this.HistoryManagerForm_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,5 +126,6 @@
         private System.Windows.Forms.TextBox textBoxSearch;
         private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.Button buttonClear;
+        private System.Windows.Forms.Panel panel1;
     }
 }

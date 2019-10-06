@@ -52,5 +52,10 @@ namespace UI
             BookmarkManager.RemoveBookmarkManager(item);
             bookmarkListBox1.Items.RemoveAt(bookmarkListBox1.SelectedIndex);
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

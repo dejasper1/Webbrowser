@@ -90,8 +90,6 @@ namespace UI
         private void clearHistoryToolStripMenuItem_Click(object sender, EventArgs e)
         {
             WebBrowser.Logic.HistoryManager.RemoveAllHistory();
-           
-            
 
         }
     }
